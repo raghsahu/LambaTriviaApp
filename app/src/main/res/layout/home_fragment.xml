@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimarybg"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_weight="0.1"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@color/color_card_play"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:background="@color/color_card_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Practice Games - Free Coins"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_card_play"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_practice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardBackgroundColor="@color/colorPrimarybg"
+                    android:elevation="2dp">
+
+                    <LinearLayout
+                        android:background="#0552C4"
+                        android:id="@+id/ll_live_play"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                        <TextView
+                            android:id="@+id/tv_live_title"
+                            android:textColor="@color/colorwhite"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Next Game"
+                            android:textSize="25dp"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/bodoni_roman"
+
+                            />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorwhite"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Win"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/bodoni_roman"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_live_win"
+                            android:textColor="@color/colorwhite"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/bodoni_roman"
+
+                            />
+
+                        <androidx.cardview.widget.CardView
+                            app:cardCornerRadius="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_live_nexttime"
+                                android:textColor="@color/colorwhite"
+                                android:textAlignment="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Comming soon"
+                                android:textSize="15dp"
+                                android:padding="10dp"
+                                android:background="@color/colorDarkGreen"
+                                android:textStyle="normal"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <HorizontalScrollView
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@color/color_card_play"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="280dp"
+                            android:layout_height="160dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/color_card_play"
+                            android:padding="10dp"
+                            android:layout_gravity="center"
+                            app:cardElevation="20dp"
+                            >
+
+                            <LinearLayout
+                                android:weightSum="1"
+                                android:background="@drawable/invite_img"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_weight="0.3"
+                                    android:id="@+id/tv_invite_msg"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/colorwhite"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Earn coin use your username as referral code"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/bodoni_roman"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_weight="0.7"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <Button
+                                        android:id="@+id/btn_invite"
+                                        android:background="@drawable/btn_bg_img"
+                                        android:layout_width="130dp"
+                                        android:layout_height="50dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="Invite"
+                                        android:textAllCaps="false"
+                                        android:textSize="20dp"
+                                        android:elevation="2dp"
+                                        android:textColor="@color/colorwhite"
+                                        />
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="280dp"
+                            android:layout_height="160dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/color_card_play"
+                            android:padding="10dp"
+                            android:layout_gravity="center"
+                            app:cardElevation="20dp"
+                            >
+
+
+                            <LinearLayout
+                                android:weightSum="1"
+                                android:background="@drawable/ad_img"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_weight="0.9"
+                                    android:layout_gravity="right"
+                                    android:gravity="right"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_marginRight="40dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_gravity="center"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/coin_new"
+                                    />
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorwhite"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="300"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/bodoni_roman"
+                                    />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_weight="0.1"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                <Button
+                                    android:id="@+id/btn_video_play"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/btn_bg_img"
+                                    android:layout_width="130dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Free"
+                                    android:textAllCaps="false"
+                                    android:textSize="20dp"
+                                    android:elevation="2dp"
+                                    android:textColor="@color/colorwhite"
+                                    />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:visibility="gone"
+                            android:layout_width="280dp"
+                            android:layout_height="160dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/color_card_play"
+                            android:padding="10dp"
+                            android:layout_gravity="center"
+                            app:cardElevation="20dp"
+                            >
+
+
+                            <LinearLayout
+                                android:weightSum="1"
+                                android:background="@drawable/practice_img"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_weight="0.3"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/colorwhite"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Play practice game while you wait for the next live game"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/bodoni_roman"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="0.7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <Button
+                                        android:id="@+id/btn_practice_home_quiz"
+                                        android:background="@drawable/btn_bg_img"
+                                        android:layout_width="130dp"
+                                        android:layout_height="50dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="Play"
+                                        android:textAllCaps="false"
+                                        android:textSize="20dp"
+                                        android:elevation="2dp"
+                                        android:textColor="@color/colorwhite"
+                                        />
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sports Predictor - Win Cash"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_view_more"
+                        android:layout_weight="0.7"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View more"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:textAlignment="textEnd"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimarybg"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_league_game"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@color/color_card_play"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:background="@color/color_card_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_weight="0.5"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/colorwhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="News"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_news_more"
+                            android:layout_weight="0.5"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/colorwhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Read more"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:textAlignment="textEnd"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_card_play"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_news_blog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                <!--<com.google.android.gms.ads.AdView-->
+                    <!--android:id="@+id/adView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--ads:adSize="SMART_BANNER"-->
+                    <!--android:foregroundGravity="center"-->
+                    <!--ads:adUnitId="@string/banner_home_footer">-->
+                <!--</com.google.android.gms.ads.AdView>-->
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

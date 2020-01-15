@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimarybg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_post"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimarybg"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_arrow" />
+
+
+            <TextView
+                android:text="Add bank account"
+                android:textColor="@color/colorwhite"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Add your bank account"
+            android:textAlignment="center"
+
+            />
+
+
+        <LinearLayout
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_holder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Account holder name"
+                android:padding="@dimen/_10sdp"
+                android:textColorHint="@color/colorgrey"
+                android:textColor="@color/colorwhite"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:inputType="textPersonName"
+                 />
+
+            <EditText
+                android:id="@+id/et_branch_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Branch code"
+                android:textColorHint="@color/colorgrey"
+                android:textColor="@color/colorwhite"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/et_ac_nmbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Account number"
+                android:textColorHint="@color/colorgrey"
+                android:textColor="@color/colorwhite"
+                android:padding="@dimen/_10sdp"
+                android:inputType="textPersonName"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_add_bank"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="10dp"
+            android:padding="@dimen/_10sdp"
+            android:text="Add new account"
+            android:textColor="#ffffff"
+            app:backgroundTint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_container" />
+
+
+        <Button
+            android:id="@+id/bt_your_ac"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="10dp"
+            android:padding="@dimen/_10sdp"
+            android:text="see your account"
+            android:textColor="#ffffff"
+            app:backgroundTint="@color/colorPrimary"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

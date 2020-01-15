@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#FF5722</color>-->
+    <color name="colorPrimary">#17084d</color>
+    <!--<color name="colorPrimaryDark">#000000</color>-->
+    <color name="colorPrimaryDark">#17084d</color>
+    <!--<color name="colorAccent">#FF5722</color>-->
+    <color name="colorAccent">#17084d</color>
+    <color name="colorDarkGreen">#046444</color>
+    <color name="colorbg">#1f1147</color>
+    <color name="colorPrimarybg">#246bd5</color>
+    <!--<color name="colorPrimarybg">#17084d</color>-->
+    <!--<color name="colorBlack">#000000</color>-->
+    <color name="colorBlack">#17084d</color>
+
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorgold">#ECB25C</color>
+    <color name="colorgray">#504F4F</color>
+    <color name="colorgrey">#808080</color>
+    <!--<color name="color_card_play">#2e0877</color>-->
+    <color name="color_card_play">#2483bb</color>
+    <color name="color_yello">#FDBF04</color>
+    <color name="color_cyan">#007cc2</color>
+    <color name="color_blue">#29166f</color>
+    <color name="color_naira_sign">#06D803</color>
+    <color name="dark_blue">#00008B</color>
+</resources>

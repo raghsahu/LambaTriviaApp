@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_news_read"
+    android:background="@color/color_card_play"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+        <!--<LinearLayout-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:background="@color/color_card_play"-->
+            <!--android:orientation="vertical"-->
+            <!--&gt;-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="180dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#ffffff"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_news_blog"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--<TextView-->
+                        <!--android:padding="5dp"-->
+                        <!--android:id="@+id/tv_news_title"-->
+
+                        <!--android:textColor="#000"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Top 10 benefits of apple juice"-->
+                        <!--android:textSize="20dp"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:fontFamily="@font/bodoni_roman"-->
+                        <!--/>-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_weight="0.2"
+                            android:padding="5dp"
+                            android:id="@+id/tv_news_title"
+                            android:textColor="#000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Top 10 benefits of apple juice"
+                            android:textSize="20dp"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/bodoni_roman"
+                            />
+
+                        <LinearLayout
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_gravity="center"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/coin_new"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_news_coin"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="normal"
+                                android:fontFamily="@font/bodoni_roman"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_news_image"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/news_img"
+                        android:scaleType="fitXY"
+                        />
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+</LinearLayout>

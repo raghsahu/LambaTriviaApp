@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimarybg"
+    tools:context=".Activity.PracticePlay_Acticvity.Practice_QuizStart_Activity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimarybg"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_quiz_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_close" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_gravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/coin_new"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_coin"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <!--<ScrollView-->
+        <!--android:scrollbars="none"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/color_card_play"
+        android:elevation="5dp">
+
+        <!--quiz ans_ques****************-->
+
+        <LinearLayout
+            android:id="@+id/ll_quiz_card"
+            android:background="@color/color_card_play"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/relative_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@color/color_card_play"
+                        app:cardCornerRadius="55dp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp">
+
+                <ProgressBar
+                    android:id="@+id/view_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"
+                    android:progressDrawable="@drawable/drawable_circularprogressbar"
+
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_timer"
+                    android:textSize="30dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="@color/colorwhite"
+                    />
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/relative_timesup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/color_card_play"
+                            app:cardCornerRadius="55dp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp">
+
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/round_border_image"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/time_out"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/relative_wrong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            app:cardBackgroundColor="@color/color_card_play"
+                            app:cardCornerRadius="55dp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp">
+
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/round_border_image"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/wrong_ans"
+                                    />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/relative_correct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_correct"
+                            app:cardBackgroundColor="@color/color_card_play"
+                            app:cardCornerRadius="55dp"
+                            android:layout_centerInParent="true"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp">
+
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/round_border_image"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/correct_ans"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!--<LinearLayout-->
+                           <!---->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_marginTop="10dp"-->
+                            <!--android:layout_width="100dp"-->
+                            <!--android:layout_height="100dp">-->
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_toRightOf="@+id/card_correct"
+                                android:layout_gravity="center"
+                                android:layout_width="120dp"
+                                android:layout_height="130dp"
+                                android:src="@drawable/jump_coin"
+                                />
+
+                        <!--</LinearLayout>-->
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Win "
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorgold"
+                    />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_gravity="center"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/coin_new"
+                            />
+                        <TextView
+                            android:id="@+id/tv_setcoin"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:textColor="@color/colorgold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ques_no"
+                android:layout_weight="0.87"
+                android:textColor="@color/colorwhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_weight="0.13"
+                android:id="@+id/tv_set_question"
+                android:textColor="@color/colorwhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:textStyle="normal"
+                />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_ans1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/triang_light_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_16sdp"
+                    android:elevation="2dp"
+                    android:textColor="@color/colorwhite"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_ans2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/triang_light_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_16sdp"
+                    android:elevation="2dp"
+                    android:textColor="@color/colorwhite"
+
+                    />
+                <TextView
+
+                    android:id="@+id/tv_ans3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/triang_light_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_16sdp"
+                    android:elevation="2dp"
+                    android:textColor="@color/colorwhite"
+
+                    />
+                <!--btn_quiz_blue   bg-->
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--//**********************progress check********-->
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+</LinearLayout>

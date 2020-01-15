@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimarybg"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="400dp"
+    android:layout_height="180dp">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorDarkGreen"
+            >
+
+            <EditText
+                android:id="@+id/et_referral"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/colorwhite"
+                android:hint="referral code"
+                android:backgroundTint="#9B9898"
+                android:textColorHint="#9B9898"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_refferal"
+            android:background="@drawable/button_selector"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="submit"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:elevation="2dp"
+            android:textColor="@color/colorwhite"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

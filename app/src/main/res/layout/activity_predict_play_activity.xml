@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimarybg"
+    tools:context=".Activity.League_Play_Activity.Predict_play_activity">
+
+
+        <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_post"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimarybg"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_close" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_gravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/coin_new"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_wallet_coin"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--app:cardBackgroundColor="#800C0C0C"-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:cardBackgroundColor="#800C0C0C"
+        android:layout_gravity="center"
+        android:elevation="2dp">
+
+        <!--android:background="@drawable/play_img1"-->
+        <LinearLayout
+            android:id="@+id/ll_bg_image"
+
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#650C0C0C"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:src="@drawable/coin_new"-->
+                        <!--/>-->
+
+
+                    <TextView
+
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₦"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/tv_total_naira"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+             </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/tv_team_vs"
+                    android:layout_weight="0.9"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/colorwhite"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manchester vs Aus"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                <!--<androidx.cardview.widget.CardView-->
+                    <!--android:layout_gravity="bottom"-->
+                    <!--app:cardBackgroundColor=""-->
+                    <!--android:gravity="center"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--app:cardCornerRadius="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                <LinearLayout
+                    android:background="@drawable/time_left_img"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/tv_time_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:text=" "
+                    android:textColor="@color/colorwhite"
+                    android:textAllCaps="false"
+                    android:textSize="14dp"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+                <!--</androidx.cardview.widget.CardView>-->
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="bottom"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coin_new"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_coin"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_game_discrp"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorwhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manchester vs Aus -44th match cricket league. When 8.30pm"
+        android:textSize="18dp"
+        android:textStyle="normal"
+
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/coin_new"
+                />
+
+            <TextView
+                android:id="@+id/tv_total_pay_coin"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+        <TextView
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to play"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+
+            <!--button play now here***********-->
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_rewards"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rules"
+                android:textColor="@color/colorwhite"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_league_rules"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="18dp"
+            android:textStyle="normal"
+
+            />
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rank"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorwhite"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reward"
+                android:gravity="right"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/colorwhite"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorgray"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_rewards"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:paddingBottom="30dp"
+            android:gravity="bottom"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--<Button-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:id="@+id/btn_play_now"-->
+                <!--android:background="@drawable/btn_bg_img"-->
+                <!--android:layout_width="180dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Play now"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="normal"-->
+                <!--android:textColor="@color/colorwhite"-->
+                <!--/>-->
+
+            <LinearLayout
+                android:id="@+id/btn_play_now"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_bg_img"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="60dp">
+
+
+                <TextView
+                    android:textColor="@color/colorwhite"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pay"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/coin_new"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_total_pay_btn"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:gravity="center"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="to play"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    />
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+
+</LinearLayout>

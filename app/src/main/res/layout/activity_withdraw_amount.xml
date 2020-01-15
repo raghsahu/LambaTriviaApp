@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/colorPrimarybg"
+   >
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_post"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimarybg"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_arrow" />
+
+
+            <TextView
+                android:text="Withdraw cash"
+                android:textColor="@color/colorwhite"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_coin"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/wallet_dot_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:weightSum="1"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="0.5"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Available"
+                            android:gravity="center"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="15dp"
+                            android:textStyle="normal"
+                            />
+
+                        <LinearLayout
+                            android:layout_weight="0.5"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Rs"
+                                android:layout_gravity="center"
+                                android:textColor="@color/color_naira_sign"
+                                android:textSize="20dp"
+                                android:textStyle="normal"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_avail_naira"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1.00"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorwhite"
+                                android:textSize="18dp"
+                                android:textStyle="normal"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_bank_details"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bank details"
+            android:gravity="center"
+            android:textColor="@color/colorwhite"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            />
+
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_main_amount"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:hint="Enter Amout"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/colorwhite"
+            android:inputType="number"
+             />
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_withdraw"
+                android:textAlignment="center"
+                android:background="@drawable/button_selector"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Withdraw"
+                android:textAllCaps="true"
+                android:textSize="20dp"
+                android:textColor="@color/colorwhite"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>

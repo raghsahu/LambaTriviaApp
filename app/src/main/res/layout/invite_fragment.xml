@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimarybg"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        >
+
+        <SearchView
+            android:id="@+id/search_hint"
+            android:background="@null"
+            android:backgroundTint="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:queryHint="Search friends"
+            android:queryHint="Search friends"
+            app:defaultQueryHint="Search friends"
+            android:autofillHints="Search friends"
+            android:iconifiedByDefault="false"
+            app:iconifiedByDefault="false"
+         />
+    </androidx.cardview.widget.CardView>
+
+    <!--android:layoutDirection="rtl"-->
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite Contacts"
+        android:textColor="@color/colorwhite"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+</LinearLayout>

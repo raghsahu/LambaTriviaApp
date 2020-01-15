@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimarybg"
+    tools:context=".Activity.Wallet_History.Wallet_transaction_Activity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_post"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimarybg"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_arrow" />
+
+
+            <TextView
+                android:text="Wallet"
+                android:textColor="@color/colorwhite"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/color_card_play"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/color_card_play"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                app:cardElevation="20dp"
+                >
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:background="@drawable/invite_img"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:id="@+id/tv_invite_msg"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/invite_text"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/bodoni_roman"
+                        />
+
+                    <LinearLayout
+                        android:layout_weight="0.7"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:visibility="gone"
+                            android:id="@+id/btn_invite"
+                            android:background="@drawable/btn_bg_img"
+                            android:layout_width="130dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Invite"
+                            android:textAllCaps="false"
+                            android:textSize="20dp"
+                            android:elevation="2dp"
+                            android:textColor="@color/colorwhite"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/color_card_play"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                app:cardElevation="20dp"
+                >
+
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:background="@drawable/ad_img"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="35dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_gravity="center"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/coin_new"
+                            />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="300"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/bodoni_roman"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_bg_img"
+                            android:layout_width="130dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Free"
+                            android:textAllCaps="false"
+                            android:textSize="20dp"
+                            android:elevation="2dp"
+                            android:textColor="@color/colorwhite"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="280dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/color_card_play"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                app:cardElevation="20dp"
+                >
+
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:background="@drawable/practice_img"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/practice_text"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/bodoni_roman"
+                        />
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="0.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:visibility="gone"
+                            android:id="@+id/btn_practice_home_quiz"
+                            android:background="@drawable/btn_bg_img"
+                            android:layout_width="130dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Play"
+                            android:textAllCaps="false"
+                            android:textSize="20dp"
+                            android:elevation="2dp"
+                            android:textColor="@color/colorwhite"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/colorPrimarybg"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/tab_border"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_coin_history"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/color_border"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorwhite"
+                    android:text="coin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/color_card_play"
+                android:layout_width="3dp"
+                android:layout_height="match_parent">
+
+            </View>
+
+        <LinearLayout
+            android:id="@+id/ll_cash_history"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorwhite"
+            android:text="cash"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_coin"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/wallet_dot_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:weightSum="1"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available"
+                    android:gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    />
+
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coin_new"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_avail_coin"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="18dp"
+                        android:textStyle="normal"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@color/colorgray" />
+
+
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Coins"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    />
+
+
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <!--<TextView-->
+                        <!--android:padding="2dp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/Rs"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:textColor="#06D803"-->
+                        <!--android:textSize="25dp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--/>-->
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coin_new"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_total_coin"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="18dp"
+                        android:textStyle="normal"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_get_coins"
+                    android:textAlignment="center"
+                    android:background="@drawable/button_selector"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="Get Coins"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorwhite"
+
+                    />
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/btn_league_play"-->
+                    <!--android:layout_width="130dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:background="@drawable/btn_bg_img"-->
+                    <!--android:text="Redeem"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="@color/colorwhite"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textStyle="normal" />-->
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rel_cash"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/wallet_dot_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:weightSum="1"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="0.5"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Available"
+                            android:gravity="center"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="15dp"
+                            android:textStyle="normal"
+                            />
+
+                        <LinearLayout
+                            android:layout_weight="0.5"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Rs"
+                                android:layout_gravity="center"
+                                android:textColor="@color/color_naira_sign"
+                                android:textSize="20dp"
+                                android:textStyle="normal"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_avail_naira"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorwhite"
+                                android:textSize="18dp"
+                                android:textStyle="normal"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorgray" />
+
+
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_margin="10dp"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="0.5"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Cash"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="15dp"
+                            android:textStyle="normal"
+                            />
+
+
+                        <LinearLayout
+                            android:layout_weight="0.5"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                            android:padding="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:layout_gravity="center"
+                            android:textColor="@color/color_naira_sign"
+                            android:textSize="20dp"
+                            android:textStyle="normal"
+                            />
+
+
+                            <TextView
+                                android:id="@+id/tv_total_naira"
+                                android:padding="2dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorwhite"
+                                android:textSize="18dp"
+                                android:textStyle="normal"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_redeem"
+                    android:textAlignment="center"
+                    android:background="@drawable/button_selector"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="Redeem"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorwhite"
+
+                    />
+
+
+                <!--<Button-->
+                <!--android:id="@+id/btn_league_play"-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@drawable/btn_bg_img"-->
+                <!--android:text="Redeem"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@color/colorwhite"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="normal" />-->
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_wallet"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

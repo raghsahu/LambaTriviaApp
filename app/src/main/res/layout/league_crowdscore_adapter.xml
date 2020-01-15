@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorPrimarybg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="0.9"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_ques_no"
+                android:textColor="@color/colorwhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q"
+                android:padding="3dp"
+                android:textAlignment="center"
+                android:textSize="13dp"
+                android:background="@drawable/circle_border"
+                android:textStyle="normal"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_set_question"
+                        android:textAlignment="textStart"
+                        android:layout_weight="0.2"
+                        android:textColor="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="what"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        />
+
+                    <LinearLayout
+                        android:layout_weight="0.8"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_gravity="center"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:paddingRight="3dp"
+                            android:src="@drawable/coin_new"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_win_per_ques_coin"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="0.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_option_1"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorwhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Q1"
+                            android:textSize="13dp"
+                            android:textStyle="normal"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_per1"
+                        android:layout_weight="0.8"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="13dp"
+                        android:textStyle="normal"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_opt2"
+                    android:layout_margin="2dp"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_opt2"
+                        android:textAlignment="textStart"
+                        android:layout_weight="0.2"
+                        android:textColor="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Q1"
+                        android:textSize="13dp"
+                        android:textStyle="normal"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_per2"
+                        android:layout_weight="0.8"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="13dp"
+                        android:textStyle="normal"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_opt_3"
+                    android:layout_margin="2dp"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_opt3"
+                        android:textAlignment="textStart"
+                        android:layout_weight="0.2"
+                        android:textColor="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Q1"
+                        android:textSize="13dp"
+                        android:textStyle="normal"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_per3"
+                        android:layout_weight="0.8"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorwhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="13dp"
+                        android:textStyle="normal"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

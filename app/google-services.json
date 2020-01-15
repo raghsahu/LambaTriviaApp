@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "816989893301",
+    "firebase_url": "https://trivia-lamba-1568015736787.firebaseio.com",
+    "project_id": "trivia-lamba-1568015736787",
+    "storage_bucket": "trivia-lamba-1568015736787.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816989893301:android:2459751455d1d9c31b84fc",
+        "android_client_info": {
+          "package_name": "com.trivia.lambatriviaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816989893301-imif62msm32mhm8q2ds65krs5cmtfpen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trivia.lambatriviaapp",
+            "certificate_hash": "d1f263011a7b5e50beff38f30d7640cb02475a4b"
+          }
+        },
+        {
+          "client_id": "816989893301-9u9ikus7fuaqsrkuhuvb77c4c0hb0i6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2VXUnRL1q7-qpnoVCmhHHdgu18XLyXkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816989893301-9u9ikus7fuaqsrkuhuvb77c4c0hb0i6f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

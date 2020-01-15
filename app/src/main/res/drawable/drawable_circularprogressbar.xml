@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/secondaryProgress">
+        <shape
+            android:shape="ring"
+            android:useLevel="true"
+            android:thicknessRatio="15" >
+            <solid android:color="#ffe902" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <shape
+            android:shape="ring"
+            android:useLevel="true"
+            android:thicknessRatio="15" >
+            <solid android:color="#1f0257" />
+        </shape>
+    </item>
+
+</layer-list>
+
+
+
+
+
+
+
+
+
+
+
+<!--<rotate xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:fromDegrees="0"-->
+    <!--android:pivotX="50%"-->
+    <!--android:pivotY="50%"-->
+    <!--android:toDegrees="360"-->
+    <!--android:duration="1">-->
+
+    <!--<shape-->
+        <!--android:innerRadiusRatio="3"-->
+        <!--android:shape="ring"-->
+        <!--android:thicknessRatio="8"-->
+        <!--android:useLevel="false">-->
+
+        <!--<size-->
+            <!--android:height="48dip"-->
+            <!--android:width="48dip" />-->
+
+        <!--<gradient-->
+            <!--android:centerColor="#AAFFCC"-->
+            <!--android:centerY="0.50"-->
+            <!--android:endColor="#78cc00"-->
+            <!--android:startColor="#55cc33"-->
+            <!--android:type="sweep"-->
+            <!--android:angle="270"-->
+            <!--android:useLevel="false" />-->
+
+    <!--</shape>-->
+
+<!--</rotate>-->
+
+
+
+
+

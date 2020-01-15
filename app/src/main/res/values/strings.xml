@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Lamba</string>
+
+    <string name="splash_text">Live Intractive \n Gaming Platfform</string>
+    <string name="get_terms">By signing up you agree to our terms \n of use and privacy policy.</string>
+    <string name="get_start">Get Started</string>
+    <string name="invite_now">Invite now</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_number">Enter Mobile no</string>
+    <string name="verify_number_text">Verify Your Number</string>
+    <string name="login_change_number">Change number</string>
+    <string name="verify_number">Verify number</string>
+    <string name="resend_otp">Resend Otp</string>
+    <string name="user_name">Your user name</string>
+    <string name="first_intro">how to play Lamba</string>
+    <string name="second_intro">Be Early</string>
+    <string name="third_intro">Be Smart, Act Fast</string>
+    <string name="fourth_intro">Tapped a wrong answer?</string>
+    <string name="fifth_intro">Cash Out</string>
+    <!--<string name="Rs">\u20B9</string>-->
+    <string name="Rs">₦</string>
+
+    <string name="play">Manchester \n vs \n Aus</string>
+
+    <string name="first_intro_msg">
+        Be on the lookout for our notification, 5 minutes before each live game.
+    </string>
+    <string name="second_intro_msg">
+        Join the game on time to participate.
+    </string>
+    <string name="third_intro_msg">
+        Tap the correct answer in under 10 seconds.
+    </string>
+    <string name="fourth_intro_msg">
+        No worries. Pay extra coins to rejoin the show.
+    </string>
+    <string name="fifth_intro_msg">
+        Request a recharge card or transfer to your bank account.
+    </string>
+
+    <string name="title_activity_bottom_navigation_">Bottom_navigation_Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Leaderboard</string>
+    <string name="title_notifications">Friends</string>
+    <string name="league_complete_thanks">Share your score with friends and earn even bigger rewards.</string>
+
+    <string-array name="aaa">
+        <item>aaaa</item>
+    </string-array>
+
+    <string name="rules">1.\tThis game has 12 questions. Some of the questions has 3 options while others are open-ended so you are required to type in your predictions.\n \n
+        2.\tAnswer all the questions correctly to win the prize money or split the money with other winners\n\n
+        3.\tEarn coins for every correct prediction and in case all the options provided are wrong, you are awarded full coins for the question.\n\n
+       </string>
+
+
+    <string name="league_result_not">Nothing here yet! Play a game to see it here.</string>
+    <string name="invite_text">For every person that uses your referral code, you earn coins!</string>
+    <string name="practice_text">More questions you answer, more the coins you earn.</string>
+    <string name="practice_complete_share">Share your score with friends and earn even bigger rewards.</string>
+    <string name="wallet_cash_terms">Minimum cash withdrawal of <font color='#06D803'>₦</font>1500 allowed.\nDaily request of recharge card is now available for winnings less than <font color='#06D803'>₦</font>1500.</string>
+
+    <string name="reminder_text">Receive game reminder 5 minutes before time</string>
+
+    <string name="facebook_app_id">425649861409163</string>
+    <string name="fb_login_protocol_scheme">fb425649861409163</string>
+
+
+    <string name="admob_app_id">ca-app-pub-8993976198123599~1693999084</string>
+    <string name="banner_home_footer">ca-app-pub-8993976198123599/2907008404</string>
+    <string name="home_footer">ca-app-pub-8993976198123599/2712734576</string>
+
+    <string name="lamba_interstitial_ad">ca-app-pub-8993976198123599/3482281955</string>
+    <string name="lamba_rewarded_ad">ca-app-pub-8993976198123599/6272096826</string>
+
+    <!--paystack gateways-->
+
+    <string name="paystack_live_public_key">pk_live_9585eb6bc7ccd03a829f6277adacf968d332d2af</string>
+    <string name="paystack_live_public_secret_key">sk_live_5d8ca9893194fdc7ac248c2aa84df95c7209c553</string>
+
+
+    <string-array name="months">
+        <item>Month</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimarybg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <!--app:cardBackgroundColor="#800C0C0C"-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="#17084d"
+                android:layout_gravity="center"
+                android:elevation="2dp">
+
+                <!--android:background="@drawable/team_bg_imag"-->
+
+                <RelativeLayout
+                    android:id="@+id/ll_bg_image"
+                    android:background="@drawable/league_place_holder_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_bg_image"-->
+
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_league_open"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:layout_width="260dp"
+                        android:layout_height="160dp"
+                        >
+
+                    <LinearLayout
+                        android:layout_weight="0.3"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <LinearLayout
+                                android:layout_weight="0.3"
+                                android:orientation="horizontal"
+                               android:padding="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    app:srcCompat="@drawable/people"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_total_player"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/colorwhite"
+                                    android:textSize="15dp"
+                                    android:textStyle="normal"
+                                    />
+
+                            </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.7"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_gravity="center"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/coin_new"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_coin"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="500"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorwhite"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_team_vs_team"
+                            android:textColor="@color/colorwhite"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginBottom="15dp"
+                                android:layout_weight="0.7"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                          <TextView
+                            android:id="@+id/tv_time_left"
+                            android:textColor="@color/colorwhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:singleLine="true"
+                            android:textSize="15dp"
+
+                            android:textStyle="bold"
+                            />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                    <!--</LinearLayout>-->
+
+                    <!---->
+                <!--</LinearLayout>-->
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="140dp"
+        android:gravity="center_horizontal"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_league_play"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_bg_img"
+            android:text="Play"
+            android:textAllCaps="false"
+            android:textColor="@color/colorwhite"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
